@@ -1,13 +1,13 @@
-def ft_print():
-	string = input("Insert a string: ")
-	columns = 20
-	
-	if len(string) > columns:
-		string = string[-columns:]
-	else:
-		string = ' ' * (columns - len(string)) + string
+def ft_space_print():
+	s = input("Insert a string: ")
+	column = 20
 
-	print(string)
+	if len(s) > column:
+		s = s[-column:]
+	else:
+		s = ' ' * (column - len(s)) + s
+
+	print(s)
 
 if __name__ == '__main__':
-	ft_print()
+	ft_space_print()

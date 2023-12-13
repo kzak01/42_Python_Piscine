@@ -36,7 +36,7 @@ def ft_itoa(n):
 
 	return result
 
-def sum_int():
+def ft_sum():
 	first_int = ft_atoi(input("Insert your first integer: "))
 	second_int = ft_atoi(input("Insert your second integer: "))
 
@@ -47,4 +47,4 @@ def sum_int():
 		print("Result:", ft_itoa(result))
 
 if __name__ == '__main__':
-	sum_int()
+	ft_sum()

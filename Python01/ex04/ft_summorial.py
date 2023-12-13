@@ -1,3 +1,5 @@
+import sys
+
 def ft_atoi(s):
 	ascii_map = {'0': 48, '1': 49, '2': 50, '3': 51, '4': 52, '5': 53, '6': 54, '7': 55, '8': 56, '9': 57}
 	result = 0
@@ -36,18 +38,27 @@ def ft_itoa(n):
 
 	return result
 
-def ft_print():
-	s = input("Insert a string: ")
-	n = ft_atoi(input("Insert an integer: "))
+def ft_summorial():
+	if len(sys.argv) != 2:
+		print('Error! Usage: python3 ft_summorial.py <n>')
+		return
 
-	if n is None:
-		print("Error: Number must be a valid integer")
-	elif n >= len(s):
-		print("Error: index out of range")
-	else:
-		print(s[n])
-		print(s[len(s) - n])
+	num = ft_atoi(sys.argv[1])
 
+	if num is None:
+		print('Error! Usage: python3 ft_summorial.py <n>')
+		return
+	
+	if num < 0:
+		print('Error! n must be >=0')
+		return
+
+	result = 0
+	while num > 0:
+		result += num
+		num -= 1
+
+	print('The sum is:', result)
 
 if __name__ == '__main__':
-	ft_print()
+	ft_summorial()

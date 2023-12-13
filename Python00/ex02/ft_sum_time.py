@@ -36,7 +36,7 @@ def ft_itoa(n):
 
 	return result
 
-def sum_time ():
+def ft_sum_time():
 	hours = ft_atoi(input("Insert hours: "))
 	minutes = ft_atoi(input("Insert minutes: "))
 	seconds = ft_atoi(input("Insert seconds: "))
@@ -48,4 +48,4 @@ def sum_time ():
 		print("Result:", ft_itoa(result))
 
 if __name__ == '__main__':
-	sum_time()
+	ft_sum_time()

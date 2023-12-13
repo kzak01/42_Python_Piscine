@@ -1,6 +1,6 @@
-def print_user_string():
+def ft_str_print():
 	string = input("Insert your string: ")
 	print("Your string is: " + string)
 
 if __name__ == '__main__':
-	print_user_string()
+	ft_str_print()

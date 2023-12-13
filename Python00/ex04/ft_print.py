@@ -37,17 +37,17 @@ def ft_itoa(n):
 	return result
 
 def ft_print():
-	string = input("Insert a string: ")
-	number = ft_atoi(input("Insert an integer: "))
+	s = input("Insert a string: ")
+	n = ft_atoi(input("Insert an integer: "))
 
-	if number is None:
+	if n is None:
 		print("Error: Number must be a valid integer")
-	elif number > len(string):
+	elif n > len(s):
 		print("Error: index out of range")
 	else:
-		start = number
-		end = len(string) - number + 1
-		print(string[start:end])
+		start = n
+		end = len(s) - n + 1
+		print(s[start:end])
 
 if __name__ == '__main__':
 	ft_print()

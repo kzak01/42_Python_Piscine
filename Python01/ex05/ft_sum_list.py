@@ -36,18 +36,26 @@ def ft_itoa(n):
 
 	return result
 
-def ft_print():
-	s = input("Insert a string: ")
-	n = ft_atoi(input("Insert an integer: "))
+def sum_list(l=[]):
+	result = 0
+	for num in l:
+		result += num
+	return result
 
-	if n is None:
-		print("Error: Number must be a valid integer")
-	elif n >= len(s):
-		print("Error: index out of range")
-	else:
-		print(s[n])
-		print(s[len(s) - n])
+def ft_sum_list():
+	numList = []
+	while True:
+		num = ft_atoi(input('Insert integer: '))
+		if num is None:
+			print('Invalid input')
+			return
+		elif num == 0:
+			break
+		numList = numList + [num]
 
+	print('The sum is:', sum_list(numList))
 
 if __name__ == '__main__':
-	ft_print()
+	ft_sum_list()
+
+
