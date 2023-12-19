@@ -21,6 +21,8 @@ def ft_atoi(s):
 	return result
 
 def ft_itoa(n):
+	if n == 0:
+		return '0'
 	ascii_map = {48: '0', 49: '1', 50: '2', 51: '3', 52: '4', 53: '5', 54: '6', 55: '7', 56: '8', 57: '9'}
 	result = ''
 	negative = False
