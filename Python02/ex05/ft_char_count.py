@@ -26,7 +26,7 @@ def ft_char_count():
 		return
 
 	char_dict = dict()
-	string = sys.argv[1]
+	string = sys.argv[1].lower()
 
 	for char in string:
 		if char not in char_dict:
